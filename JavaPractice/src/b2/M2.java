@@ -23,7 +23,7 @@ public static void readFile(File file,List<Integer> list) {
 		}
 	} catch (FileNotFoundException e) {
 		// TODO Auto-generated catch block
-		System.out.println("파일을 찾을 수 없습니다.");
+		System.out.println("파일을 찾을 수 없습니다!!!");
 	}
 }
 	
