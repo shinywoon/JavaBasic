@@ -1,12 +1,6 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
 import java.util.Map;
-import java.util.Set;
-import java.util.Vector;
+import java.util.TreeMap;
 
 public class JavaStruct {
 
@@ -173,8 +167,12 @@ public class JavaStruct {
 		// put을 통해서 HashMap에 값을 넣을 수 있다.
 		map.put("num", 2);
 		map.put("num2", 3);
+		map.put("num3", 3);
+		map.put("num4", 3);
 		// get을 통해서 key에 해당하는 value값을 얻을 수 있다.
 		System.out.println(map.get("num"));
+		System.out.println(map.get("num2"));
+		
 		// get 메서드를 사용했을 때 Map의 key값에 해당하는 value가 없을 경우에 get메서드를 하용하면
 		// null이 리턴이 된다.
 		// null 대신 default 값을 얻고 싶으면 getOrDefault 메서드를 사용한다.
