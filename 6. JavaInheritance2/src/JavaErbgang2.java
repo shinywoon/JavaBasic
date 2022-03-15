@@ -12,7 +12,7 @@ class Calculator {
     int left, right;
      //Calculator Class의 기본 생성자
    // public Calculator(){}
-     //Calculator Class의 매개변수 Class
+    //Calculator Class의 매개변수 Class
     public Calculator(int left, int right){
         this.left = left;
         this.right = right;
