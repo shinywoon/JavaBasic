@@ -58,12 +58,15 @@ public class View {
 			flag = 1;
 			return flag;
 		}else {
+			int z = 1;
+			System.out.println("============");
 			for(Food i : basket) {
-				System.out.println("============");
+				System.out.print(z + ". ");
 				System.out.print(i.name + "    ");
 				System.out.println(i.price);
-				System.out.println("============");
-			}		
+				z++;
+			}	
+			System.out.println("============");
 			int sum = sumBasket(basket);
 			System.out.println("Total : " + sum +"원 ");
 		}
@@ -80,7 +83,14 @@ public class View {
 				
 		return result;
 	}
-
-
+	
+	public void basketNavi() {
+		System.out.println("[ 1. 결제하기 ] [ 2. 메뉴 삭제 하기 ] [ 3. 이전으로 ]");
+	}
+	
+	public void showComp() {
+		System.out.println("결제 완료");
+	}
+	
 	
 }
