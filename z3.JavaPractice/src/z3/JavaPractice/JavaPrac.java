@@ -1,5 +1,7 @@
 package z3.JavaPractice;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import Food.Food;
@@ -9,54 +11,109 @@ public class JavaPrac {
 	static Food food = new Food();
 	static View view = new View();
 	static Scanner sc = new Scanner(System.in);
-	
-	public static void detailService(Food[] list){
+	static List<Food> basket = new ArrayList<>();
+
+
+	public static int detailService(Food[] list) {
 		int detailFlag = 0;
 		detailFlag = sc.nextInt();
-		if(detailFlag < list.length) {
+		if (detailFlag < list.length) {
 			view.viewDetail(detailFlag, list);
 		}
+		return detailFlag;
 	}
 	
+	public static int basketAddFood(int pc,Food[] list) {
+		int naviFlag = 0;
+		naviFlag= sc.nextInt();
+		if(naviFlag == 1) {
+			basket.add(list[pc]);
+			for(Food i : basket) {
+				System.out.print(i.name + "     ");
+				System.out.println(i.price);
+			}
+		}
+		return naviFlag;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Food[] bugerList = food.setBugersMenu().get(0);
 		Food[] setList = food.setBugersMenu().get(1);
 		Food[] drinkList = food.setBugersMenu().get(2);
 
-
+		
 		while (true) {
 
-			String menuSelectNo;
-			
+			int menuSelectNo;
 
 			view.viewfirstScreen();
-			menuSelectNo = sc.next();
+			menuSelectNo = sc.nextInt();
 
-			if (menuSelectNo != null) {
+			if (menuSelectNo == 1) {
 				view.selectNavi();
-				
+
 				int selectFlag = 0;
 				selectFlag = sc.nextInt();
 				switch (selectFlag) {
 				case 1:
-					
+
 					view.viewFoods(bugerList);
-					detailService(bugerList);
-					break;
+					int pc = detailService(bugerList);
+					if(pc > bugerList.length) {
+						continue;
+					}
+					view.viewBaketNavi();
+					pc = pc-1;
+					int naviFlag = basketAddFood(pc,bugerList);
+					if(naviFlag == 2) {
+						continue;
+					}
 					
+					
+					break;
+
 				case 2:
 					view.viewFoods(setList);
-					detailService(setList);
-					break;
+					pc = detailService(setList);
+					if(pc > bugerList.length) {
+						continue;
+					}
+					view.viewBaketNavi();
+					pc = pc-1;
+					naviFlag = basketAddFood(pc,setList);
+					if(naviFlag == 2) {
+						continue;
+					}
 					
+					
+					break;
+
 				case 3:
 					view.viewFoods(drinkList);
-					detailService(drinkList);
+					pc = detailService(drinkList);
+					if(pc > bugerList.length) {
+						continue;
+					}
+					view.viewBaketNavi();
+					pc = pc-1;
+					naviFlag = basketAddFood(pc,drinkList);
+					if(naviFlag == 2) {
+						continue;
+					}
+					
+					
 					break;
 				}
 
+			}else if (menuSelectNo == 2) {
+				int bf = view.showBasket(basket);
+				if(bf == 1) {
+					continue;
+				}else {
+					
+				}
 			}
 
 		}

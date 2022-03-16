@@ -59,7 +59,7 @@ public class JavaHomeWork {
 //		boolean b2 = sc.nextBoolean();
 //		switch (op) {
 //		case "AND":
-//			if (b1 == b2) {
+//			if ((b1==true)&&(b2==true)) {
 //				System.out.println("true");
 //			} else {
 //				System.out.println("false");
