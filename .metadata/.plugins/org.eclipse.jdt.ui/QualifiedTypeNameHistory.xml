@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.ListIterator"/>
@@ -17,4 +16,17 @@
     <fullyQualifiedTypeName name="View.View"/>
     <fullyQualifiedTypeName name="z2.JavaHomeWork.ori1.Ori"/>
     <fullyQualifiedTypeName name="z2.JavaHomeWork.ori1.JavaHomeWork"/>
+    <fullyQualifiedTypeName name="z2.JavaHomeWork.ori1.Calculator"/>
+    <fullyQualifiedTypeName name="z2.JavaHomeWork.ori1.CalculatorDecoPlus"/>
+    <fullyQualifiedTypeName name="z2.JavaHomeWork.ori1.CalculatorDecoMinus"/>
+    <fullyQualifiedTypeName name="z2.JavaHomeWork.ori1.EmployeeInfo"/>
+    <fullyQualifiedTypeName name="z2.JavaHomeWork.ori1.EmployeePerson"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.Month"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 </qualifiedTypeNameHistroy>
