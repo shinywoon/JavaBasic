@@ -5,66 +5,36 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Test {
-	
-	
-	
-	public static void main(String[] args) {
 
-//      //2.
+	public static int[] BubbleSort(int[] array, int len) {
+		int[] numList = array;
+		for (int i = 1; i < numList.length; i++) {
+			for (int j = 1; j < numList.length; j++) {
+				if (numList[j - 1] < numList[j]) {
+					int tmp = numList[j - 1];
+					numList[j - 1] = numList[j];
+					numList[j] = tmp;
+				}
+			}
 
-
-		// 3.
-
-
-		// 4.
-
-		// 5.F0 = 0, F1 =1, F2 = 2, F(n+2)= F(n+1) + Fn
-
-
-		// 6.
-
-
-		// 7.
-
-
-		// 8.
-
-		
-		//9.아니 쉬벌 이게 무슨 말이여
-		
-		//10. 	
-
-		
-		//11.
-		
-
-		
-		//12.
-
-		
-		//13.
-		//int money = 3500;
-		// 500 700 400
-		
-		//14.
-
-		
-		//15.
-
-		
-		//16.
-
-		
-		//17.
-		
-		
-		//18.
-
-		
-		//19.
-		
-		
-		
+		}
+		return numList;
 	}
 
+	public static void main(String[] args) {
+
+		int[] array = { 2, 1, 7, 25, 3, 85, 11, 90, 45, 25 };
+
+		for (int i : array) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+
+		array = BubbleSort(array, array.length);
+
+		for (int i : array) {
+			System.out.print(i + " ");
+		}
+
+	}
 }
