@@ -16,6 +16,7 @@ public class JavaMath {
 		System.out.println(Math.abs(-10));
 		//random -> return double
 		System.out.println(Math.random());
+		//제곱근을 구하는 Method
 		System.out.println(Math.sqrt(25));
 		
 		

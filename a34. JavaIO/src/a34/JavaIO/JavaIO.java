@@ -7,9 +7,9 @@ public class JavaIO {
 		
 		// IO : Input output
 		// IO -> Byte -> inputStream
-		//			  -> outPutStream
-		//	  -> Char -> Reader
-		//            -> writer
+		//			         -> outPutStream
+		//	    -> Char -> Reader
+		//                  -> writer
 		
 		// 특별 방법으로 사용하려면 4가지 추상 메서드를 생성자에서 받아들이는 IO클래스를 사용해야 함
 		// 어디로 부터 어디에라는 대상을 지정 가능 : 장식 대상 클래스

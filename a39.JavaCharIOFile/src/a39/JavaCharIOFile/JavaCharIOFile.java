@@ -15,7 +15,7 @@ public class JavaCharIOFile {
 			pw = new PrintWriter(new FileWriter("test.txt"));
 			String line = null;
 			while((line = br.readLine()) != null) {
-				pw.write(line);				
+				pw.println(line);				
 			}
 			
 		} catch (Exception e) {

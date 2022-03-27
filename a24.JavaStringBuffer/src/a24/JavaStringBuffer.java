@@ -20,7 +20,7 @@ public class JavaStringBuffer {
 		if(sb2 == sb3)
 			System.out.println("sb2 == sb3");
 		//메소드 체이닝 (Method Chaining)
-		//자기자신을 리턴하여 계속해서 자신의 메소드를 호출하는 방
+		//자기자신을 리턴하여 계속해서 자신의 메소드를 호출하는 방식
 		//
 		
 		String str2= new StringBuffer().append("hello").append(" ").append("world").toString();
@@ -32,6 +32,7 @@ public class JavaStringBuffer {
 		String str1 = "hello world";
 		String str3 = str1.substring(5);
 		System.out.println(str1);
+		System.out.println("-------------------");
 		System.out.println(str3);
 		
 		String str4 = str1+str3;
