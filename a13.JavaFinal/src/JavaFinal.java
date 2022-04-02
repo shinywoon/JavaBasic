@@ -1,11 +1,15 @@
 
+
+// Calculator class
 class Calculator {
+	//final 로 값을 고정 (상수화)
     static final double PI = 3.14;
     int left, right;
- 
+    
     public void setOprands(int left, int right) {
         this.left = left;
         this.right = right;
+        //class 변수 PI 는 상수화 되어 있기 때문에 변경이 불가능하다.
         //Calculator.PI = 6;
     }
  

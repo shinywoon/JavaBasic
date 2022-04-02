@@ -1,8 +1,15 @@
 
+//abstract Class
+// abstract 요소를 하나라도 담고 있어야 한다.
 abstract class A{
     public abstract int b();
     //본체가 있는 메소드는 abstract 키워드를 가질 수 없다.
+    
+    // abstract가 붙은 매서드는 abstract method에서 구현하지 않는다.
+    // 내용 구현이 되어 있으면 Error 발생
     //public abstract int c(){System.out.println("Hello")}
+    
+    
     //추상 클래스 내에는 추상 메소드가 아닌 메소드가 존재 할 수 있다. 
     public void d(){
         System.out.println("world");
@@ -10,6 +17,7 @@ abstract class A{
 }
 
 // 상속
+// abstract class	를 상속받은 class는 abstract Method를 꼭!! override 해야 한다.
 class B extends A{
 	//오버라이딩
     public int b(){return 1;}
@@ -24,8 +32,10 @@ public class JavaAbstract {
 		//상속을 강제하는 일종의 규제
 		// 추상 메소드
 		
-		  //A obj = new A();
-		  // Error 발생
+		
+		// 추상 class를 인스턴스화 하면 Error 발생
+		 //A obj = new A();
+		 
 		//메소드 b의 선언 부분에는 abstract라는 키워드가 등장하고 있다. 
 		//이 키워드는 메소드 b는 메소드의 시그니처만 정의 되어 있고 
 		//이 메소드의 구체적인 구현은 하위 클래스에서 오버라이딩 해야 한다는 의미다.
@@ -35,8 +45,10 @@ public class JavaAbstract {
 		//아래와 같이 추상 클래스 A를 인스턴스화하면 오류가 발생한다. 
 		//그것은 추상 클래스는 구체적인 메소드의 내용이 존재하지 않기 때문에 
 		//인스턴스화시켜서 사용할 수 없기 때문이다. 
+		
 		B obj = new B();
         System.out.println(obj.b());
+        
 		//클래스 B는 클래스 A를 상속했다. 그리고 클래스 A의 추상 메소드인 메소드 b를 오버라이딩하고 있다. 
         //그 결과 클래스 A를 사용할 수 있었다.
         
@@ -48,8 +60,8 @@ public class JavaAbstract {
         
         //디자인 패턴
         //이러한 개발 방법을 template method pattern이라고도 한다. 
-        //템플릿
         
+        //템플릿
        //템플릿은 자주 사용하는 모양을 모아둔 것이라고 할 수 있다. 
         //템플릿은 모양을 결정하지만 템플릿을 통해서 그려질 도형은 팬의 종류나 색상에 
         //따라서 달라진다. 

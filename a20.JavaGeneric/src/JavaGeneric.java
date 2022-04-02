@@ -1,16 +1,23 @@
 
+//StudentInfo Class
 class StudentInfo{
     public int grade;
     StudentInfo(int grade){ this.grade = grade; }
 }
+
+//EmplyeeInfo Class
 class EmployeeInfo{
     public int rank;
     EmployeeInfo(int rank){ this.rank = rank; }
 }
+
+//Person <> => Class명 <제네릭 : wrapperClass>
 class Person<T>{
     public T info;
     Person(T info){ this.info = info; }
 }
+
+
 public class JavaGeneric {
 
 	public static void main(String[] args) {
@@ -25,7 +32,8 @@ public class JavaGeneric {
         //System.out.println(ei2.rank); // 컴파일 실패
         //1은 잘 동작할 것이다. 중요한 것은 p2다.
         //p2는 컴파일 오류가 발생하는데 p2.info가 String이고 String은 rank 필드가 
-        //없는데 이것을 호출하고 있기 때문이다.
+        //없는데 이것을 호출하고 있기 때문이다. 
+        //-> Person생성자에 String 부장을 넘김으로 해당 객체는 Employee,student 객체를 가지지 않고 문자열만 넘긴 것 이다.
         //여기서 중요한 것은 아래와 같이 정리할 수 있다.
         
 		//p1.inpo : EmployeeInfo

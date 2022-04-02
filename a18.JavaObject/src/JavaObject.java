@@ -1,13 +1,35 @@
+
+
 class Student{
-    String name;
+    
+	String name;
+    
+	//생성자
     Student(String name){
         this.name = name;
     }
+    
+    //Class라면 Object 로 부터 상속을 받는다
+    //Class의 최상위가 Object 이기 때문이다. 
+    //equals, toDstring 등의 Object method를 상속받아
+    //override 하여 사용하여야 한다
+    
     public boolean equals(Object obj) {
-        Student _obj = (Student)obj;
+        
+    	Student _obj = (Student)obj;
+        
         return name == _obj.name;
+        
     }
+
+	@Override
+	public String toString() {
+		
+		return "Student Class : name : " + this.name;
+	}
 }
+
+
 public class JavaObject {
 
 	public static void main(String[] args) {
@@ -22,7 +44,7 @@ public class JavaObject {
 		//toString
 		//객체를 문자로 표현하는 메소드
 		
-		//클래스 Calculator에 toString을 재정의(overiding)했다. 
+		//클래스 Calculator에 toString을 재정의(overriding)했다. 
 		//그리고 인스턴스를 System.out.println의 인자로 전달하니까 t
 		//oString을 명시적으로 호출하지 않았음에도 동일한 효과가 나고 있다.
 		//toString 메소드는 자바에서 특별히 취급하는 메소드다. 
@@ -37,10 +59,11 @@ public class JavaObject {
 	     Student s2 = new Student("egoing");
 	     System.out.println(s1 == s2);
 	     System.out.println(s1.equals(s2));
-		//s1과 s2가 서로 다른 객체이기 때문이다. 
+	
+	    //s1과 s2가 서로 다른 객체이기 때문이다. 
 	   //하지만 두 개의 객체가 논리적으로는 egoing이라는 값을 가지고 있기 때문에
 	   //저 두 개의 객체가 같은 객체로 간주 되었으면 좋겠다. 
-	   //이럴 때 클래스 Object의 메소드 equals를 overiding하면 된다. 
+	   //이럴 때 클래스 Object의 메소드 equals를 overriding하면 된다. 
 	     
 	     //1. 객체 간에 동일성을 비교하고 싶을 때는 ==를 사용하지 말고 equals를 이용하자.
 

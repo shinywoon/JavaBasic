@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class JavaCharIOConsole {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		//한줄씩 입력 : BufferdReader System.in(inputStream)
 		// BufferdReader는 Reader만받아옴

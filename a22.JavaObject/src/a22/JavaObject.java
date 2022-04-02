@@ -1,6 +1,7 @@
 package a22;
 
 import java.util.Objects;
+
 //Object Class -> 모든 Class의 최상위
 // 모든 Class	는  Object Class의 기능을 쓸 수 있다.
 // HashCode, equals,  toString -> Override를 통해 사용할 수 있다.

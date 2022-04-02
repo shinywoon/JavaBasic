@@ -43,7 +43,7 @@ public class JavaPolymorphism {
 	     
 	     //클래스와 다형성
 	     A obj = new B();
-	     obj.x();
+	     System.out.println(obj.x()); 
 	     //obj.y(); Error 발생  =>  B obj = new B(); 로 수정 시 사용 가능
 	     //이상하게 보이겠지만 클래스 B의 데이터 형이 클래스 A이다.
 	     //클래스 B는 클래스 A를 상속하고 있다. 
@@ -62,7 +62,7 @@ public class JavaPolymorphism {
 	     //이 클래스의 데이터 타입으로 인터페이스를 지정 할 수 있다.
 	     
 	     /*
-	      interface I{}
+	      	interface I{}
 			class C implements I{}
 			public class PolymorphismDemo2 {
     			public static void main(String[] args) {

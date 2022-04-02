@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-class B{
+class B {
 	 void run(){
 	        BufferedReader bReader = null;
 	        String input = null;
