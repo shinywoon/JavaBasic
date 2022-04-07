@@ -15,6 +15,7 @@ public class ThreadA {
 			}
 			System.out.println("Total : " + tb.total);
 		}
+		System.out.println("main end!");
 		
 	}
 }

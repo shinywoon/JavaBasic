@@ -2,8 +2,6 @@ package a47.JavaDemonThread;
 
 public class DemonThread implements Runnable {
 	
-	
-	
 	@Override
 	public void run() {
 		while(true) {
