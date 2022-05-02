@@ -51,6 +51,7 @@ public class JavaGeneric {
 		System.out.println(num);
 		
 		
+		
 	}
 
 }

@@ -12,6 +12,7 @@ public class MusicBoxExam {
 		mp1.start();
 		mp2.start();
 		mp3.start();
+		System.out.println("main end ==============");
 	}
 
 }

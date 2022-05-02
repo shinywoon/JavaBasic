@@ -54,4 +54,5 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="z10.JavaOutPrac.CircleManager"/>
+    <fullyQualifiedTypeName name="java.nio.channels.Selector"/>
 </qualifiedTypeNameHistroy>

@@ -3,6 +3,7 @@
 // abstract 요소를 하나라도 담고 있어야 한다.
 abstract class A{
     public abstract int b();
+    
     //본체가 있는 메소드는 abstract 키워드를 가질 수 없다.
     
     // abstract가 붙은 매서드는 abstract method에서 구현하지 않는다.
