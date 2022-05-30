@@ -49,8 +49,7 @@ public class JavaGeneric {
 		//auto Unboxing
 		int num = box3.getObj();
 		System.out.println(num);
-		
-		
+	
 		
 	}
 
